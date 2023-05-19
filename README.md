@@ -1,20 +1,25 @@
 ## nmap-wrapper
 
-A simple wrapper around the nmap cli
+A simple wrapper around the nmap cli.
+
+> Note: the [`nmap`](https://nmap.org/) cli must be installed to use this library.
 
 ### Installation
 
 ```
-# Optional, but recommended: Create a virtual environment
-cd my_project
+# Create a virtual environment (Highly recommended)
+mkdir nmap_demo && cd nmap_demo
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate # Active the venv for this shell session
 
 # Install
-pip install path/to/nmap_wrapper
+pip install ../path/to/nmap_wrapper
+# Or from git
+pip install 'nmap_wrapper @ git+https://github.com/nmay231/nmap_wrapper@[TAG OR COMMIT]'
+
 
 # Run an example
-python path/to/nmap_wrapper/examples/[example].py
+python ../path/to/nmap_wrapper/examples/[example].py
 ```
 
 ### Usage
