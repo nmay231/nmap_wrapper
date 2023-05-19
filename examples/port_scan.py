@@ -28,7 +28,7 @@ class PortScan(XMLElement):
     hosts = TagAlias.list("host", HostTag)
 
 
-hosts = "localhost 127.0.0.1"
+hosts = "127.0.0.1 example.com"
 x = PortScan.from_string(nmap(f"-p20-22 {hosts}"))
 print(f"{x.num_services=}, {x.port_range=}")
 print(x)
