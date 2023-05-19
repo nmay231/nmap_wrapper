@@ -19,7 +19,7 @@ pip install 'nmap_wrapper @ git+https://github.com/nmay231/nmap_wrapper@[TAG OR 
 
 
 # Run an example
-python ../path/to/nmap_wrapper/examples/[example].py
+python -m nmap_wrapper.examples.port_scan
 ```
 
 ### Usage
